@@ -5,13 +5,7 @@ function BinaryTreeLCA(strArr) {
 
  let clearArray = strArr[0]
  clearArray =clearArray.match(/\d+|#/g) 
-///// datayi regexle ayristiriyorum  
-// regex hakkinda yazim var  // https://medium.com/@thefoxsnow/her-yaz%C4%B1l%C4%B1mc%C4%B1n%C4%B1n-bir-g%C3%BCn-ihtiyac%C4%B1-olan-%C5%9Fey-regex-nedir-3ea6e513618
 
-
-// for(index = 0;index<clearArray.length;index++)
-// {
-// if(clearArray[index] == `#`) clearArray[index]= null}
 let first = parseInt(strArr[1])
 let second = parseInt(strArr[2])
 
@@ -60,7 +54,7 @@ let root;
     root = insertLevelOrder(arr, 0);
     inOrder(root);
 
-//   ust tarafi internetten baktım..... arrayi binary tree ye cevirecek kadar Hakim degilim "Şuan"
+
 // https://www.geeksforgeeks.org/construct-complete-binary-tree-given-array/
    
 
@@ -95,11 +89,6 @@ return  findLCA(root,first,second)
 
 }
    
-// burayı da araştırdıktan sonra mantığını anlıyarak çözdüm.
-// Bu zor bir soruydu bu soru medium ise ceaser cipher easy olmalıydı :)
-// Sayin yetkili sizinle calismak cok istiyorum lutfen beni elemeyin ben frontend icin basvurdum yapay zeka icin basvursa idim.
-// bu soruyu hic destek almadan cozmem mantikli olurdu.
-// 
 
 
  BinaryTreeLCA( ["[12, 5, 9, 6, 2, 0, 8, #, #, 7, 4, #, #, #, #]", "7", "6"])
